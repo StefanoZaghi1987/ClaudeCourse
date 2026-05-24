@@ -1,0 +1,83 @@
+Hi, in this chat you are a senior full-stack software engineer, with 20+ years of experience in any kind of framework and technologies.
+You are an expert in software development best practices, common guidelines and coding standards.
+In particular, you are specialized in software development with Claude Code.
+
+Actually, I have organized all the documentation needed for this project.
+I need your help to generate the best possible Claude.md configuration file for Claude Code for this project.
+
+Please write me the best prompt for Claude, in Italian language, to operate and complete the following tasks sequentially.
+
+1. Project Documentation Analysis & Understanding
+1.1 read, analyze and understand all project documentation
+1.2 before proceeding with the following task, ensure to have read and understood ALL uploaded documents.
+
+2. Claude.md configuration file generation: generate the best possible Claude.md configuration file for Claude Code for this project.
+The Claude.md configuration file must be optimized in order to maximize code quality and architecture, while minimizing token usage.
+In particular, it must be modularized into smaller files, keeping all information accessible when needed.
+The output Claude.md configuration file and all its referenced files must be generated, in Italian language, as downloadable Markdown (.md) artifacts.
+
+Write this prompt with the following additional strict requirements.
+
+A. Critical execution order
+The tasks execution order is critical, so their order must be followed sequentially.
+
+B. Don't ignore any task
+You must operate and complete every single task.
+Please remember that the tasks order must be followed sequentially.
+
+C. Output task verification
+- after completing each task, verify your output before moving to the next one
+- do not proceed to the next task until the current one passes verification
+- if verification fails, revise the current task before continuing
+- provide a final summary confirming all tasks were completed successfully.
+
+D. Request confirmation: ask for acknowledgment
+Ask clarifying questions if any requirement is unclear.
+
+E. Don't use assumptions
+- don't provide any recommentations based on assumptions
+- verify each statement using certified or otherwise reliable information sources
+- all analysis must be grounded on certified or otherwise reliable information sources examination.
+
+F. Software Requirements
+Software requirements are defined in "SoftwareRequirements.md" document.
+The output Claude.md configuration file and its referenced files must guarantee that the solution will respect all defined software requirements.
+
+G. Include Needed Enforcement Rules
+The output Claude.md configuration file and its referenced files must be generated following all best practices defined in "ClaudeCodeEnforcementRulesBestPractices.md" document.
+The output Claude.md configuration file and its referenced files must explicitly include all TRULY NEEDED enforcement rules which will assure to respect the following principles:
+- Universal Software Development Best Practices (SOLID, DRY, Single Responsibility Principle, Separation of Concerns, etc.)
+- Solution Modularity (organize code into logical modules)
+- Code Readibility and Maintainability
+- limit file sizes and monitor file size growing
+- adopt file splitting and refactoring strategies (by responsibility, domain, etc.).
+
+H. Universal Software Development Best Practices
+The output Claude.md configuration file and its referenced files must include a reference to "UniversalSoftwareDevelopmentBestPractices.md" document.
+This reference must allow to gather detailed information, when needed, about Universal Software Development Best Practices.
+
+I. Follow Claude Code Configuration Best Practices
+The output Claude.md configuration file and its referenced files must be optimized in order to maximize both code quality and solution architecture while minimizing token usage.
+This configuration must respect all best practices defined in "ClaudeCodeConfigurationBestPractices.md" document.
+
+J. Follow Claude Code Modularization Best Practices
+The output Claude.md configuration file and its referenced files must be generated following all best practices defined in "ClaudeCodeModularizationBestPractices.md" document.
+Claude Code configuration must be modularized into smaller files, keeping all information accessible when needed.
+
+K. Follow Claude Code Referencing Best Practices
+All references between Claude.md configuration file and the other configuration files must be structured following all best practices defined in "ClaudeCodeReferencingBestPractices.md" document.
+
+L. Independently know when to read referenced files
+The output Claude.md configuration file and its referenced files must include statements to assure Claude will independently know when to read any single configuration file.
+
+M. Independently know when to update referenced files
+The output Claude.md configuration file and its referenced files must include statements to assure Claude will independently know when to update any single configuration file.
+
+N. Make a Development Plan
+Make a development plan comprehensive of all needed development tasks.
+The output must comprehend a Markdown (.md) document containing this development plan.
+The output Claude.md configuration file must include a reference to this file.
+
+O. Generate a Project Map
+The output must comprehend a Markdown (.md) document containing a project map which will allow Claude to locate any single file without needing to search for it inside all the codebase.
+The output Claude.md configuration file must include a reference to this file.

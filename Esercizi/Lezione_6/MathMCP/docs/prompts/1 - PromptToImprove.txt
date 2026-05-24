@@ -1,0 +1,1 @@
+/prompt-architect voglio creare un MCP Server che esponga dei tool che consentano di svolgere operazioni matematiche basilari

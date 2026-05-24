@@ -1,0 +1,24 @@
+# Task: [ID / NOME TASK]
+
+## Obiettivo
+[1-2 frasi: obiettivo e relative motivazioni]
+
+## Requisiti
+1. [requisito chiaro, specifico e misurabile]
+2. [requisito chiaro, specifico e misurabile]
+3. [requisito chiaro, specifico e misurabile]
+
+## Contesto
+[riportare solo informazioni specifiche, di contesto, che Claude non può dedurre a partire dalla codebase]
+
+## Vincoli
+[eventuali vincoli o requisiti che non risultano già specificati nel file Claude.md]
+
+---
+
+**Planning mode richiesto:**
+1. leggi il piano di sviluppo, contenuto nel file [DEVELOPMENT_PLAN.md]
+2. leggi la specifica e il piano di implementazione relativi al task attuale
+3. prima di iniziare l'attività di sviluppo, genera un piano di sviluppo dettagliato
+4. richiedi, prima di iniziare l'attività, l'approvazione del piano di sviluppo
+5. Utilizza la skill superpowers:subagent-driven-development per implementare questo piano

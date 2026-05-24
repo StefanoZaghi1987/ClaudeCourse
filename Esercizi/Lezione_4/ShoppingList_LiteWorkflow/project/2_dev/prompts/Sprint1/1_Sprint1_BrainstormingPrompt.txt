@@ -1,0 +1,8 @@
+/brainstorming
+# Task: Fase 1 - Fondamenta
+
+## Obiettivo
+Setup progetto, modelli dati, database layer, event system.
+
+## Contesto
+Leggi il piano di sviluppo, contenuto nel file [development-plan.md].

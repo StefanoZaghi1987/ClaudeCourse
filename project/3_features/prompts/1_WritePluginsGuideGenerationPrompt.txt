@@ -1,0 +1,72 @@
+Hi, in this chat you are a senior trainer and consultant, with 20+ years of experience in Generative and Agentic AI technologies.
+You are specialized on Claude Desktop and Claude for Code AI platforms.
+Your knowledge is not limited to the academic field, but you have extensive knowledge in a business and enterprise context.
+
+Please write me the best prompt for Claude, in English language, to operate and complete the following tasks sequentially.
+
+1. Claude latest features Documentation Analysis & Understanding
+1.1 use your web search and web research tools to access Claude official documentation regarding latest features and improvements
+1.2 Analyze and understand documentation regarding latest features and improvements
+
+2. Plugins management for Claude, Claude Code and Claude Cowork Documentation Deep Analysis & Understanding
+2.1 use your web search and web research tools to access Claude official documentation regarding plugins management for Claude, Claude Code and Claude Cowork
+2.2 deeply analyze and understand documentation regarding plugins management for Claude, Claude Code and Claude Cowork
+
+3. Most relevant plugins for Claude, Claude Code and Claude Cowork Documentation Deep Analysis & Understanding
+3.1 use your web search and web research tools to access Claude official documentation regarding most relevant plugins for Claude, Claude Code and Claude Cowork
+3.2 deeply analyze and understand documentation regarding most relevant plugins for Claude and Claude Cowork, such as Operations, Design, Engineering, Data, Productivity, Enterprise search, etc.
+3.3 deeply analyze and understand documentation regarding most relevant plugins for Claude Code, such as Claude code setup, Claude md management, Code review, Code simplifier, Feature dev, Superpowers, etc.
+3.4 for each of the most relevant plugins, understand its features, its purpose, its usage, how is it triggered and how must be used (automatically, manually, both ways)
+
+4. Claude Plugins guide: write a guide with an exhaustive explanation of plugins management for Claude, Claude Code and Claude Cowork, with all relevant and useful information discovered during the previous analysis.
+This document's purpose is to help me learn and then teach each single concept.
+The output must be generated as a downloadable Word Document (.docx) artifact, written in Italian language.
+
+Generate this prompt, as a downloadable Markdown (.md) artifact, with the following requirements.
+
+A. Critical execution order
+The tasks execution order is critical, so their order must be followed sequentially.
+
+B. Don't ignore any task
+You must operate and complete every single task.
+Please remember that the tasks order must be followed sequentially.
+
+C. Output task verification
+- after completing each task, verify your output before moving to the next one
+- do not proceed to the next task until the current one passes verification
+- if verification fails, revise the current task before continuing
+- provide a final summary confirming all tasks were completed successfully.
+
+D. Request confirmation: ask for acknowledgment
+Ask clarifying questions if any requirement is unclear.
+
+E. Don't use assumptions
+- verify each statement using certified or otherwise reliable information sources
+- all analysis must be grounded on certified or otherwise reliable information sources examination.
+
+F. Output report depth
+- the output report must be written in a detailed and exhaustive way
+- introduce a specific section for each relevant aspect.
+
+G. Chapter guide requirements:
+- explain me each single topic clearly and in detail, so that I can acquire all the necessary knowledge
+- address this explanation from both a theoretical and a practical point of view
+- specify pratical examples, to be shared during the course, which will help understanding each single concept
+- the length of the document must not exceed a maximum of 50 pages
+- do not skip any paragraphs or topics
+- generate the entire document at once, in a single step.
+
+H. Main course objectives:
+- share general concepts and guidelines regarding logic and use of tools based on generative AI technologies
+- illustrate the main features and usage methods of Claude Desktop and Claude for Code
+- clarify the potential and limitations of these tools
+- share general best practices for using Claude Desktop and Claude for Code
+- share best practices for using Claude Desktop and Claude for Code in specific areas and for well-defined workflows
+- provide practical examples of tasks that can be performed with Claude's help
+- provide "Spec-driven development" guidelines aimed at developing prototype solutions adopting a well-structured development workflow.
+
+I. Additional requirements:
+- organize the course in such a way as to cover, in a broad spectrum, all aspects relating Claude Desktop and Claude for Code platforms
+- cover all the main topics and aspects that will prove useful in everyday life from an operational point of view
+- ensure my colleagues receive sufficiently vertical and in-depth training. Approach each single topic practically starting from scratch and ensure the partecipants will have the opportunity to quickly acquire advanced knowledge and skills in using these tools
+- address not only the already established topics, but also the more advanced and recently introduced features.

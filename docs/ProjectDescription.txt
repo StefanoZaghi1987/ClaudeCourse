@@ -1,0 +1,3 @@
+Professional Training Course: Claude Desktop and Claude for Code
+
+This project supports the organization and delivery of a comprehensive training course on Claude Desktop and Claude for Code platforms for company colleagues. The project assists with course design, content development, timeline planning, exercise creation, and analysis of participant submissions to create a tailored learning experience that balances theoretical foundations (30%) with practical applications (70%). It serves as a central hub for developing training materials, analyzing participant needs, and preparing spec-driven development guidelines for professional AI-assisted workflows.

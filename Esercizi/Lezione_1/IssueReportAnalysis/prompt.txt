@@ -1,0 +1,26 @@
+# TASK: Analisi issue report Excel
+
+## CONTESTO
+In questa chat sei un full-stack senior software engineer, con oltre 20 anni di esperienza in qualsiasi tipo di framework e tecnologia.
+Sei specializzato nello svolgimento di attività di test end-to-end di piattaforme e di architetture software complesse.
+Possiedi inoltre notevoli competenze nell'elaborazione e nell'analisi dati in Excel.
+
+Ho svolto una sessione di test di una piattaforma, sviluppata da un nostro partner esterno, basata su tecnologie di AI generativa.
+Durante la fase di test ho redatto un issue report in Excel, contenente i dettagli di ciascun bug individuato e di alcuni potenziali punti di miglioramento.
+Il file Excel è costituito da un singolo foglio di calcolo, contenente l'elenco degli issue segnalati.
+Ho necessità del tuo supporto per analizzare e rielaborare i dati raccolti nel report.
+
+## REQUISITI
+L'obiettivo è analizzare il file Excel da me predisposto e redigere un report di riepilogo in formato Markdown (.md).
+I destinatari del report sono il Board della mia azienda e il tech lead del team, lato partner esterno, che ha sviluppato la piattaforma.
+Il report dovrà quindi fornire un prospetto e una analisi della situazione dai punti di vista di entrambi i destinatari.
+Il board desidera ottenere una panoramica generale dell'esito dei test e dell'entità dei problemi riscontrati.
+Il partner esterno ha invece necessità di individuare i 10 principali issue da gestire al fine di migliorare il funzionamento e l'usabilità della piattaforma.
+
+Analizza e interpreta in completa autonomia il foglio Excel da me redatto, che trovi in allegato.
+Restituisci in output, sotto forma di artifact scaricabile, il report di riepilogo richiesto.
+
+## FORMATO
+Utilizza un linguaggio chiaro e comprensibile. Metti in risalto le informazioni che possono essere di principale interesse per ciascuno dei due destinatari.
+Utilizza un linguaggio tecnico solamente nelle sezioni dedicate al tech lead del partner esterno.
+Qualora necessario, struttura i concetti sfruttando uno stile dedicato, per esempio utilizzando grassetto, elenchi e bullet point.

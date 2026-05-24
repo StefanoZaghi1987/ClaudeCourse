@@ -1,0 +1,34 @@
+/brainstorming
+# Task: Sprint 1 — Core Offline: Liste e Articoli
+
+## Obiettivo
+CRUD completo di liste e articoli offline-first, senza autenticazione (modalità guest).
+
+## Requisiti
+1. L'app funziona completamente offline
+2. creare/modificare/eliminare liste e articoli
+3. spuntare articoli
+4. gestione cestino
+5. Nessuna chiamata di rete richiesta.
+
+## Contesto
+Leggi il piano di sviluppo, contenuto nel file [development_plan.md].
+PROGETTO: ShoppingList MVP
+OBIETTIVO SPRINT: CRUD liste e articoli completamente offline con Dexie.js
+
+SCHEMA DEXIE (già definito in src/db/database.ts):
+  - Tabella 'lists': campi in types/index.ts → interfaccia List
+  - Tabella 'items': campi in types/index.ts → interfaccia Item
+  - Tabella 'changeLog': traccia ogni operazione CRUD
+
+PATTERN DA SEGUIRE:
+1. Repository (db/repositories/) → accesso diretto Dexie, nessuna logica business
+2. Service (services/) → logica business + chiama repository + chiama recordChange()
+3. Store (stores/) → stato React, chiama service, espone via useLiveQuery
+4. Component → legge da store/useLiveQuery, chiama store actions
+
+REGOLA CRITICA: Ogni operazione CRUD DEVE chiamare recordChange() dopo la modifica locale.
+Questo popola il changeLog per la futura sincronizzazione.
+
+OPTIMISTIC UI: Le modifiche devono apparire immediatamente nell'UI (IndexedDB è sincrono abbastanza).
+Non aspettare conferma server.

@@ -1,0 +1,8 @@
+/brainstorming
+# Task: FASE 2: Core Offline - Business Logic
+
+## Obiettivo
+Services, CRUD liste, CRUD articoli, autocomplete, database articoli.
+
+## Contesto
+Leggi il piano di sviluppo, contenuto nel file [development-plan.md].

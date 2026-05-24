@@ -1,0 +1,75 @@
+Hi, in this chat you are a senior trainer and consultant, with 20+ years of experience in Generative and Agentic AI technologies.
+You are specialized on Claude Desktop and Claude for Code AI platforms.
+Your knowledge is not limited to the academic field, but you have extensive knowledge in a business and enterprise context.
+
+I want to create a Claude project focused on the following task.
+I want to organize a course regarding Claude Desktop and Claude for Code platforms usage.
+In this context, I will act as a trainer and consultant.
+The course's target audience are some of my colleagues. They hold different roles in my company, so it's a heterogeneous audience, both in terms of skills and operational capabilities.
+
+I'll try to summarize here main course objectives:
+- share general concepts and guidelines regarding logic and use of tools based on generative AI technologies
+- illustrate the main features and usage methods of Claude Desktop and Claude for Code
+- clarify the potential and limitations of these tools
+- share general best practices for using Claude Desktop and Claude for Code
+- share best practices for using Claude Desktop and Claude for Code in specific areas and for well-defined workflows
+- provide practical examples of tasks that can be performed with Claude's help
+- provide "Spec-driven development" guidelines aimed at developing prototype solutions adopting a well-structured development workflow.
+
+The course must be organized following some additional requirements:
+- organize the course in such a way as to cover, in a broad spectrum, all aspects relating Claude Desktop and Claude for Code platforms
+- cover all the main topics and aspects that will prove useful in everyday life from an operational point of view
+- ensure my colleagues receive sufficiently vertical and in-depth training. Approach each single topic practically starting from scratch and ensure the partecipants will have the opportunity to quickly acquire advanced knowledge and skills in using these tools
+- address not only the already established topics, but also the more advanced and recently introduced features.
+
+Expected Timeline: To be defined
+
+Approach: 30% theoretical, 70% practical (approximately)
+
+Method:
+- Remotely, using Microsoft Teams
+- Each session will be recorded and transcribed
+- Following each session, a report of the topics covered will be prepared and shared, together with the related recording
+
+Required Tools:
+- Claude Desktop
+- Notepad++ (https://notepad-plus-plus.org/downloads/)
+
+Optional Tools:
+- Visual Studio Code (https://code.visualstudio.com/download)
+- GitHub Desktop (https://desktop.github.com/download/)
+
+In anticipation of the course, I asked each participant to share with me the following content and documentation:
+1. General Expectations
+    - General expectations regarding the course
+	- Topics you would like to address
+	- Knowledge you would like to acquire
+2. Current Use of Claude
+	- Activities in which you have been able to use Claude effectively
+	- Activities for which you have tried to use Claude, but it was unable to provide effective support
+	- Doubts and concerns regarding your current ways of using Claude
+	- Activities for which you would like to introduce and use Claude as a support tool
+3. Practical Test
+    Share a test or an idea for a prototype solution (only one!!) to be developed with Claude.
+    It must be something of medium-high complexity, but in your opinion feasible in a short time (ideally max. 2 days of work), and that has actual value for you.
+    The test could consist, for example, of one of the following alternatives:
+    - A task that you have not been able to perform with Claude's help until now
+    - A task for which you would like to introduce Claude as a support tool
+    - A repetitive activity that you perform periodically, for which you would like to optimize time and/or quality of the result
+    - The development of a prototype tool dedicated to a particular task or workflow.
+
+Given all my needs in this context, I need your help about the following themes:
+- define in a precise way all course topics
+- define course timeline and operational aspects
+- improve my knowledge and skills in order to be able to prepare the course in the best possible way
+- organize the course in the best possible way
+- draft any additional documentation for the various lessons
+- prepare and complete exercises to be done during course sessions
+- analyze all documentation shared by each single partecipant and help me to cover their needs.
+
+Please write me the best prompt for Claude, in English language, to require the following contents generation as downloadable artifacts:
+- a synthetic project description, in text (.txt) format, to setup this project in Claude
+- a detailed and exhaustive description, in Markdown (.md) format, for this project
+- write me some useful and relevant project instructions, in Markdown (.md) format, to configure this project in Claude.
+
+Write this prompt, in Markdown (.md) language, as a downloadable artifact.

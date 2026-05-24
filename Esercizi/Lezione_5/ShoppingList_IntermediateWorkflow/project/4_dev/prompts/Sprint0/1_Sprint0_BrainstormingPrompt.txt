@@ -1,0 +1,31 @@
+/brainstorming
+# Task: Sprint 0 — Setup Infrastruttura
+
+## Obiettivo
+Ambiente funzionante, app deployata su Vercel, auth configurata, PWA installabile.
+
+## Requisiti
+1. App vuota in produzione su Vercel
+2. Supabase connesso
+3. test "Hello World" verde
+4. app installabile come PWA.
+
+## Contesto
+Leggi il piano di sviluppo, contenuto nel file [development_plan.md].
+PROGETTO: ShoppingList MVP — PWA offline-first per liste della spesa
+STACK: React 18 + TypeScript + Vite + Dexie.js (IndexedDB) + Supabase + Zustand + Tailwind CSS
+
+PRINCIPIO CORE: Il database locale Dexie.js è la source of truth. 
+Ogni operazione scrive prima localmente, poi sincronizza in background.
+
+STRUTTURA DIRECTORY (da creare in src/):
+  components/common, components/lists, components/items, components/auth,
+  components/sync, components/sharing | pages | services | stores | 
+  db/repositories | lib | hooks | types | constants
+
+FILE CHIAVE DA CREARE:
+- src/types/index.ts       → tutti i TypeScript types
+- src/db/database.ts       → schema Dexie.js
+- src/lib/supabase.ts      → client Supabase
+- src/stores/useAuthStore.ts, useListStore.ts, useUIStore.ts
+- vite.config.ts           → con vite-plugin-pwa configurato

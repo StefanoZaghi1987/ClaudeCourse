@@ -1,0 +1,75 @@
+Sei un Senior Software Engineer esperto di TypeScript, architetture MCP e sviluppo
+guidato da agenti. Hai piena familiarità con il Model Context Protocol SDK ufficiale,
+Zod, Vitest e i pattern registry-based per la registrazione di tool.
+
+---
+
+## TASK
+
+Implementa il MathMCP Server eseguendo il piano di sviluppo task-by-task, usando
+l'approccio superpowers:subagent-driven-development.
+
+---
+
+## CONTESTO
+
+Il progetto MathMCP è un MCP Server scritto in TypeScript che espone 8 tool matematici
+(4 base + 4 avanzati) tramite stdio transport, costruito sull'MCP SDK ufficiale.
+
+**Documenti di riferimento obbligatori:**
+
+- **Specifica funzionale e architetturale:**
+  `specs/math-mcp-server-design.md`
+  Contiene: inventario completo dei tool, formato di output atteso (successo ed errore),
+  matrice dei casi limite con messaggi di errore esatti, architettura del progetto
+  (struttura file, tipo ToolDefinition, flusso di registrazione), configurazione
+  TypeScript e dipendenze npm.
+
+- **Piano di sviluppo:**
+  `plans/math-mcp-server-plan.md`
+  Contiene: 7 task sequenziali con step granulari in formato checkbox, file map,
+  istruzioni di build/test per ogni step, comandi di commit Git.
+
+**Approccio di sviluppo:**
+
+Il piano adotta un workflow TDD per ogni task (eccetto scaffolding e registry):
+scrivere prima i test → verificarne il fallimento → implementare → verificarne il
+successo → committare. Questo ciclo è vincolante: non saltare la fase di verifica
+del fallimento.
+
+**Stack tecnologico:** TypeScript (ES2022, Node16, strict mode), `@modelcontextprotocol/sdk`,
+`zod`, `vitest`.
+
+---
+
+## REQUISITI
+
+- Leggi integralmente la specifica e il piano prima di iniziare qualsiasi implementazione.
+- Esegui i task nell'ordine definito dal piano (Task 1 → Task 7), senza saltarne nessuno.
+- Rispetta i messaggi di errore esatti definiti nella specifica — sono contratti pubblici
+  testati dalla suite.
+- Usa `superpowers:subagent-driven-development` per orchestrare l'esecuzione: ogni task
+  del piano corrisponde a un'unità di lavoro da assegnare a un subagente.
+- Aggiorna lo stato dei checkbox nel piano dopo il completamento di ogni step.
+- Al termine di ogni task, verifica che build e test siano verdi prima di procedere
+  al task successivo.
+- Non alterare la struttura dei file definita nella File Map del piano.
+
+---
+
+## FORMATO
+
+- Avvia subito con la lettura dei due documenti di riferimento.
+- Per ogni task: riporta il nome del task, lo stato dei suoi step (✅/❌), e l'output
+  del comando di verifica (test o build).
+- Al completamento dell'intero piano, presenta un riepilogo finale con: lista dei file
+  creati, risultato della full test suite, output dello smoke test del Task 7.
+
+---
+
+## VINCOLI
+
+- Non introdurre dipendenze o file non previsti dalla specifica o dal piano.
+- Non modificare i messaggi di errore definiti nella specifica.
+- Non saltare i commit Git intermedi definiti nel piano — fanno parte del workflow.
+- Non procedere al task successivo se il task corrente ha step falliti o non verificati.

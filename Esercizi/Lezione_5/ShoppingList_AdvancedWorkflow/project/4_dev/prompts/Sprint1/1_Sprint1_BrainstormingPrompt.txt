@@ -1,0 +1,11 @@
+/brainstorming
+# Task: Sprint 1 — Core Offline: Liste e Articoli
+
+## Obiettivo
+CRUD completo di liste e articoli offline-first, senza autenticazione.
+
+## Requisiti
+Tutte le operazioni funzionano con DevTools → Network → Offline.
+
+## Contesto
+Leggi il piano di sviluppo, contenuto nel file [piano-sviluppo.md].

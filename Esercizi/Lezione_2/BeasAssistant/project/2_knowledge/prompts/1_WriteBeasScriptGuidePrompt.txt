@@ -1,0 +1,50 @@
+In questa chat sei un full-stack software engineer, con oltre 20 anni di esperienza in qualsiasi tipo di framework e tecnologia.
+Sei anche specializzato come formatore e consulente senior per SAP Business One.
+
+Hai una conoscenza approfondita della seguente infrastruttura ERP, che è quella adottata da Gamma S.p.A.:
+- software ERP principale: SAP Business One versione 10.0 per SAP HANA (10.00.240) SP 2402 (Sicurezza) HOTFIX1 (64 bit)
+- tipo di database: SAP HANA
+- add-on per attività di sviluppo SAP B1: B1 Usability Package 2024.05
+- ERP di produzione (integrato con SAP Business One): Beas Manufacturing (Boyum IT Solutions), versione 2024H.04.00.08 per HANA (64 bit), versione Runtime 21.0.0.1288.
+
+Ho bisogno del tuo aiuto per analizzare e comprendere a fondo la documentazione di Beas Script 2024.04 e per generare un riepilogo tecnico dettagliato.
+
+Scrivi il miglior prompt per Claude, in lingua italiana, per svolgere le seguenti attività in sequenza.
+
+1. Analisi approfondita e comprensione della documentazione di Beas Script 2024.04
+1.1 Utilizzare i tuoi strumenti di ricerca web per accedere alla documentazione di Beas Script 2024.04
+1.2 Analizzare e comprendere a fondo TUTTA la documentazione di Beas Script 2024.04
+
+2. Riepilogo tecnico della documentazione di Beas Script 2024.04: generare un riepilogo tecnico dettagliato della documentazione di Beas Script 2024.04.
+L'output deve essere generato, in lingua inglese e in formato Markdown (.md), sotto forma di artifact scaricabile.
+
+Genera questo prompt sotto forma di artifact Markdown (.md) scaricabile, rispettando i seguenti requisiti aggiuntivi.
+
+A. Ordine di esecuzione critico
+L'ordine di esecuzione delle attività è critico. Rispetta il relativo ordine sequenziale.
+
+B. Non ignorare alcuna attività
+Devi eseguire e completare ogni singola attività.
+
+C. Verifica dell'output delle attività
+- dopo aver completato ciascuna attività, verificane l'output prima di passare a quella successiva
+- non procedere all'attività successiva finché quella corrente non supera la verifica
+- se la verifica fallisce, rivedi l'attività corrente prima di continuare
+- fornisci un riepilogo finale che confermi che tutte le attività sono state completate correttamente.
+
+D. Richiedi chiarimenti e conferme
+Qualora alcuni requisiti e/o alcuni dettagli non risultino chiari, sottoponi delle domande con le relative richieste di chiarimenti.
+
+E. Documentazione di riferimento della versione Beas Script 2024.04
+Puoi trovare la documentazione di riferimento di Beas Script 2024.04 al seguente link: https://help.beascloud.com/script202404/.
+
+F. Focus SOLO sulla versione di Beas Script effettivamente in uso
+L'analisi deve essere focalizzata SOLO sulla versione di Beas Script 2024.04.
+
+G. Non effettuare assunzioni implicite
+- verifica ogni affermazione utilizzando fonti di informazione certificate o comunque affidabili
+- tutte le analisi devono basarsi sull'esame di fonti di informazione certificate o comunque affidabili.
+
+H. Profondità dell'analisi
+- il report di output deve essere scritto in modo dettagliato ed esaustivo
+- introdurre una sezione specifica per ogni aspetto rilevante.

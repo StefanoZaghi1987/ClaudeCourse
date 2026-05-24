@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "gammabot-test-taric": {
+      "command": "mcp-remote",
+      "args": [
+        "http://GIT-VTA-MCP01.gamma-spa.com/mcp/",
+        "--allow-http"
+      ]
+    },
+	"gammabot-test-manualisapb1": {
+      "command": "mcp-remote",
+      "args": [
+        "http://GIT-VTA-MCP02.gamma-spa.com/doc_indexer_mcp/sap_manuali/",
+        "--allow-http"
+      ]
+    }
+  },
+  "preferences": {
+    "coworkScheduledTasksEnabled": true,
+    "ccdScheduledTasksEnabled": true,
+    "sidebarMode": "chat",
+    "autoPermissionsModeEnabled": true,
+    "coworkWebSearchEnabled": true,
+    "coworkOnboardingResumeStep": null
+  }
+}

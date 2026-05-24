@@ -1,0 +1,122 @@
+In questa chat sei un senior full-stack software engineer, con 20+ anni di esperienza in ogni tipo di framework e tecnologia.
+Voglio sviluppare un'applicazione web, che verrà denominata "ShoppingList", finalizzata alla gestione di liste della spesa condivise.
+Vorrei prendere spunto, come idea generale, dall'applicazione mobile "Buy me a pie".
+
+La soluzione dovrà consentire la gestione di un arbitrario numero di liste della spesa, ognuna delle quali potrà essere condivisa con uno o più utenti.
+Ciascuna lista dovrà poter essere condivisa, con un qualsiasi utente, o in modalità di sola lettura o garantendo anche i permessi di modifica (senza possibilità di cancellazione definitiva della lista).
+
+L'applicazione dovrà essere in grado di lavorare, di base, in modalità offline.
+Dovranno lavorare in modalità online solamente le funzionalità per le quali una connessione internet risulta strettamente necessaria, come la condivisione di una lista e la sincronizzazione delle modifiche tra vari utenti.
+
+La modifica del contenuto di una lista, ossia l'aggiunta di nuovi elementi e la modifica di elementi già introdotti, dovrà risultare il più possibile semplice e smart.
+Nello specifico, l'applicazione dovrà garantire le seguenti funzionalità:
+- inserimento rapido di un articolo tramite autocompletamento (autocomplete search sul database degli articoli)
+- inserimento di un articolo sotto forma di testo libero (inserimento di un articolo non presente lato database).
+
+Affinché l'applicazione possa lavorare offline, il suo funzionamento dovrà essere basato su un database locale persistente.
+Ogni qualvolta l'utente inserirà un nuovo articolo come testo libero, ovvero ogni qualvolta specificherà un articolo non presente lato database, il sistema dovrà richiedere all'utente se desidera salvare tale articolo anche all'interno del database locale, affinché venga riproposto successivamente.
+Questa funzionalità permetterà agli utenti di avere a disposizione un "dizionario" comune degli articoli disponibili.
+Sin dal primo rilascio dell'applicazione, il database dovrà già essere configurato con un insieme predefinito di articoli.
+Quando due utenti collaborano tra loro su una o più liste della spesa, allora i database locali degli articoli disponibili dovranno essere sincronizzati tra loro, in modo tale che ciascun utente abbia a disposizione i nuovi articoli codificati dagli altri utenti.
+
+Riporto qui un elenco delle altre funzionalità che vorrei prevedere.
+
+[ Gestione degli Articoli nella Lista ]
+
+1. Stati degli articoli
+- Spuntatura/completamento: flag per marcare gli articoli già acquistati
+- Visualizzazione differenziata: articoli da comprare vs già comprati
+- Azione rapida: swipe/tap per cambiare stato
+- Ripristino: possibilità di "despuntare" un articolo
+
+2. Attributi degli articoli
+- Quantità: campo numerico (es. "3")
+- Unità di misura: kg, litri, pezzi, confezioni, etc.
+- Note: campo testo libero per dettagli (es. "marca X", "biologico")
+- Categorie/Reparti: frutta, latticini, carne, bevande, etc. (per organizzare la spesa)
+
+[ Gestione delle Liste ]
+
+3. Metadati e personalizzazione liste
+- Nome lista personalizzabile
+- Ordinamento articoli: manuale (drag&drop), alfabetico, per categoria, per stato
+- Contatori: totale articoli, articoli completati
+
+4. Template e liste ricorrenti
+- Duplica lista: creare nuova lista da una esistente
+- Elimina lista: eliminazione liste non più necessarie
+
+[ Sincronizzazione e Conflitti ]
+
+5. Gestione conflitti offline-first (CRITICO)
+- Conflict resolution strategy: last-write-wins, merge intelligente, o prompt utente
+- Timestamp delle modifiche: per determinare la versione più recente
+- Log delle modifiche: chi ha fatto cosa e quando
+- Indicatori di sincronizzazione: stato online/offline, sync in corso, conflitti rilevati
+
+6. Notifiche e awareness
+- Push notifications: quando qualcuno modifica una lista condivisa
+
+[ User Experience ]
+
+7. Modalità shopping
+- Interfaccia semplificata: font grandi, pulsanti grandi per uso in negozio
+- Ordine suggerito: basato sul layout tipico del supermercato
+
+8. Ricerca e filtri
+- Ricerca globale: trovare articoli in tutte le liste
+- Filtri: per categoria, per stato, per lista
+- Ordinamento intelligente: articoli più usati in cima
+
+9. Cronologia e undo
+- Undo/Redo: annullare ultime azioni
+- Cestino: per recuperare articoli cancellati per errore
+
+[ Gestione Utenti ]
+
+10. Sistema autenticazione
+- accesso e utilizzo dell'applicazione senza autenticazione (come guest)
+- Registrazione/Login: email + password, OAuth (Google, Apple)
+- Profilo utente: nome, preferenze
+- Gestione inviti: link di condivisione o email
+
+11. Permessi granulari
+- Owner: può eliminare lista e gestire permessi
+- Editor: può modificare contenuto
+- Viewer: sola lettura
+- Revoca accessi: rimuovere utenti dalla condivisione
+
+12. Integrazione esterna
+- Import/Export: TXT, CSV, JSON
+- Condivisione: link pubblico (sola lettura)
+- Stampa: versione stampabile della lista
+
+[ Architettura Tecnica da Considerare ]
+
+13. Sync engine robusto
+- CRDTs (Conflict-free Replicated Data Types) per merge automatico
+- Operational Transformation per modifiche concorrenti
+- Delta sync: sincronizzare solo le differenze, non tutto il database
+- Versioning: ogni modifica ha un vector clock o timestamp causale
+
+14. Performance offline
+- Service Worker: per PWA e caching
+- IndexedDB/SQLite: per storage locale performante
+- Background sync: sincronizzazione quando torna la connessione
+- Optimistic UI: aggiornamenti UI immediati, sync in background.
+
+Suggeriscimi almeno 6 possibili stack tecnologici per implementare questo tipo di soluzione, prendendo in considerazione i seguenti aspetti.
+
+Strumenti di sviluppo disponibili:
+- Visual Studio Code
+- Claude Desktop + Claude Code.
+
+Vincoli per la selezione dello stack tecnologico:
+- prendere in considerazione solo stack tecnologici totalmente free
+- il focus dell'analisi deve riguardare lo sviluppo di un MVP della soluzione
+- il prototipo sviluppato dovrà essere esteso (o eventualmente riprogettato da zero), in una fase successiva, al fine di ottenere una soluzione completa e pronta per la produzione
+- lo sviluppo della soluzione prototipale (MVP) deve essere gestito da qualcuno che non possieda competenze avanzate o specializzate nello sviluppo software
+- lo sviluppo della soluzione prototipale (MVP) sarà svolto, con l'ausilio di Claude Code, adottando la metodologia "spec-driven development".
+- seguire, sin dallo sviluppo della soluzione prototipale (MVP), tutte le moderne best practice di sviluppo software
+- selezionare uno stack tecnologico il più semplice possibile, come HTML5 + TypeScript o qualsiasi altra soluzione alternativa analoga
+- chiarire, per ciascuna soluzione, i relativi pro e contro, ma anche il rispettivo livello di complessità.
