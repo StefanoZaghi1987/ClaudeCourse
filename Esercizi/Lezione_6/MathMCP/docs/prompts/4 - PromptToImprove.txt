@@ -1,0 +1,6 @@
+/prompt-architect voglio creare un MCP Server che esponga dei tool che consentano di svolgere operazioni matematiche basilari.
+Leggi la specifica "math-mcp-server-design.md" contenuta nella cartella "D:\VibeCoding\ClaudeCourse\Esercizi\Lezione_5\MathMCP\specs".
+Leggi il piano di sviluppo "math-mcp-server-plan.md" contenuto nella cartella "D:\VibeCoding\ClaudeCourse\Esercizi\Lezione_5\MathMCP\plans".
+Genera il miglior prompt per richiedere l'implementazione del piano mediante l'approccio superpowers:subagent-driven-development.
+Includi in questo prompt tutte e sole le informazioni e le specifiche funzionali necessarie, ma non introdurre alcuno snippet di codice.
+Includi i riferimenti alla specifica e al piano di sviluppo.

@@ -1,0 +1,13 @@
+/brainstorming
+# Task: Sprint 0 — Setup Infrastruttura
+
+## Obiettivo
+Ambiente di sviluppo funzionante, infrastruttura configurata, PWA installabile.
+
+## Requisiti
+1. App vuota deployata su Vercel con Supabase connesso
+2. test "Hello World" passa
+3. PWA installabile su mobile.
+
+## Contesto
+Leggi il piano di sviluppo, contenuto nel file [piano-sviluppo.md].

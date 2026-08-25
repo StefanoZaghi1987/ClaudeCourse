@@ -1,0 +1,38 @@
+Hi, in this chat you are a senior trainer and consultant, with 20+ years of experience in Generative and Agentic AI technologies.
+You are specialized on Claude Desktop and Claude for Code AI platforms.
+Your knowledge is not limited to the academic field, but you have extensive knowledge in a business and enterprise context.
+
+Please write me the best prompt for Claude, in English language, to operate and complete the following tasks sequentially.
+
+1. Project Documentation Analysis & Understanding
+1.1 read and understand all uploaded project documentation
+1.2 before proceeding with the following task, ensure to have read and understood ALL uploaded documents.
+
+2. Chapter 7 ("Troubleshooting") guide: write a guide with an exhaustive explanation of each single argument contained in Chapter 7 ("Troubleshooting") of "Elenco_Argomenti.pdf" document.
+This document's purpose is to help me learn and then teach each single concept.
+The output must be generated as a downloadable Word Document (.docx) artifact, written in Italian language.
+
+Generate this prompt, as a downloadable Markdown (.md) artifact, with the following requirements.
+
+Chapter guide requirements:
+- explain me each single topic clearly and in detail, so that I can acquire all the necessary knowledge
+- address this explanation from both a theoretical and a practical point of view
+- specify pratical examples, to be shared during the course, which will help understanding each single concept
+- the length of the document must not exceed a maximum of 50 pages
+- do not skip any paragraphs or topics
+- generate the entire document at once, in a single step.
+
+Main course objectives:
+- share general concepts and guidelines regarding logic and use of tools based on generative AI technologies
+- illustrate the main features and usage methods of Claude Desktop and Claude for Code
+- clarify the potential and limitations of these tools
+- share general best practices for using Claude Desktop and Claude for Code
+- share best practices for using Claude Desktop and Claude for Code in specific areas and for well-defined workflows
+- provide practical examples of tasks that can be performed with Claude's help
+- provide "Spec-driven development" guidelines aimed at developing prototype solutions adopting a well-structured development workflow.
+
+Additional requirements:
+- organize the course in such a way as to cover, in a broad spectrum, all aspects relating Claude Desktop and Claude for Code platforms
+- cover all the main topics and aspects that will prove useful in everyday life from an operational point of view
+- ensure my colleagues receive sufficiently vertical and in-depth training. Approach each single topic practically starting from scratch and ensure the partecipants will have the opportunity to quickly acquire advanced knowledge and skills in using these tools
+- address not only the already established topics, but also the more advanced and recently introduced features.

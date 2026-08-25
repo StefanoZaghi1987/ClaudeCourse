@@ -1,0 +1,56 @@
+In questa chat hai un doppio profilo da senior business analyst e full-stack software engineer, con oltre 20 anni di esperienza in qualsiasi tipo di framework e tecnologia.
+Ho bisogno del tuo supporto per scrivere un documento di specifica tecnica (requisiti software) dettagliato per questo progetto.
+Dati i possibili framework individuati per lo sviluppo di un MVP della soluzione (documento "FrameworkAnalysis.md"), vorrei adottare il seguente stack tecnologico.
+
+Stack selezionato: React + Vite + TypeScript + Dexie.js + Workbox + Supabase
+
+Scrivi il miglior prompt per Claude, in lingua italiana, per svolgere le seguenti attività in sequenza.
+
+1. Analisi e comprensione della documentazione del progetto
+1.1 leggere e comprendere tutta la documentazione di progetto caricata
+1.2 prima di procedere con la seguente attività, assicurati di aver letto e compreso TUTTI i documenti caricati.
+
+2. Requisiti software: scrivere un documento di specifica tecnica (requisiti software) dettagliato ed esaustivo, in lingua italiana e in formato Markdown (.md), per questo progetto.
+La soluzione deve essere progettata per essere modulare ed estendibile e deve essere sviluppata seguendo tutte le moderne best practice nello sviluppo software.
+L'architettura deve essere basata sullo stack software e sulla configurazione scelti.
+L'output deve essere generato, in formato Markdown (.md), sotto forma di artifact scaricabile.
+
+Genera questo prompt come artifact scaricabile, in formato Markdown (.md), rispettando i seguenti requisiti aggiuntivi.
+
+A. Ordine di esecuzione critico
+L'ordine di esecuzione delle attività è critico. Rispetta il relativo ordine sequenziale.
+
+B. Non ignorare alcuna attività
+Devi eseguire e completare ogni singola attività.
+
+C. Verifica dell'output delle attività
+- dopo aver completato ciascuna attività, verificane l'output prima di passare a quella successiva
+- non procedere all'attività successiva finché quella corrente non supera la verifica
+- se la verifica fallisce, rivedi l'attività corrente prima di continuare
+- fornisci un riepilogo finale che confermi che tutte le attività sono state completate correttamente.
+
+D. Richiedi chiarimenti e conferme
+Qualora alcuni requisiti e/o alcuni dettagli non risultino chiari, sottoponi delle domande con le relative richieste di chiarimenti.
+
+E. Non effettuare assunzioni implicite
+- verifica ogni affermazione utilizzando fonti di informazione certificate o comunque affidabili
+- tutte le analisi devono basarsi sull'esame di fonti di informazione certificate o comunque affidabili.
+
+F. Ambito dell'analisi e profondità tecnica
+L'analisi deve concentrarsi su ogni aspetto rilevante e deve fornire una copertura dettagliata di tutti i domini funzionali e tecnici.
+
+G. Profondità dell'analisi
+- il report di output deve essere scritto in modo dettagliato ed esaustivo
+- introdurre una sezione specifica per ogni aspetto rilevante
+- includere diagrammi architetturali e diagrammi di flusso, se utile.
+
+H. Strumenti di sviluppo disponibili:
+- Visual Studio Code
+- Claude Desktop + Claude Code.
+
+I. Vincoli tecnologici e di sviluppo:
+- il focus dell'analisi deve riguardare lo sviluppo di un MVP della soluzione
+- il prototipo sviluppato dovrà essere esteso (o eventualmente riprogettato da zero), in una fase successiva, al fine di ottenere una soluzione completa e pronta per la produzione
+- lo sviluppo della soluzione prototipale (MVP) deve essere gestito da qualcuno che non possieda competenze avanzate o specializzate nello sviluppo software
+- lo sviluppo della soluzione prototipale (MVP) sarà svolto, con l'ausilio di Claude Code, adottando la metodologia "spec-driven development".
+- seguire, sin dallo sviluppo della soluzione prototipale (MVP), tutte le moderne best practice di sviluppo software.

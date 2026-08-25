@@ -1,0 +1,28 @@
+# Task: Migliorare le funzionalità CRUD degli articoli
+
+## Obiettivo
+Rendere maggiormente user-friendly le funzionalità CRUD degli articoli associati ad una lista.
+
+## Requisiti
+- UI moderna e user-friendly
+- migliorare il posizionamento dei controlli (autocomplete textbox, pulsante, ecc.) dedicati all'aggiunta di un articolo ad una lista
+- possibilità di specificare categoria, quantità e unità di misura di un articolo immediatamente dopo aver specificato l'articolo da inserire (attualmente è necessario selezionare l'articolo e accedervi in modalità editing)
+- miglioramento funzionalità autocomplete sugli articoli (logica e layout del controllo)
+- possibilità di marchiare un articolo come già acquistato non solo cliccando sulla checkbox corrispondente, ma cliccando direttamente sull'articolo
+- rendere maggiormente user-friendly l'accesso alle funzionalità CRUD degli articoli inseriti in una lista (attualmente è necessario cliccare su un pulsante che renderizza le funzionalità disponibili, ossia editing e cancellazione)
+
+## Contesto
+Leggi il piano di sviluppo, contenuto nel file [piano-sviluppo.md].
+
+## Vincoli
+- responsive layout
+- evitare regression.
+
+---
+
+**Planning mode richiesto:**
+1. leggi il piano di sviluppo, contenuto nel file [piano-sviluppo.md]
+2. leggi il piano di implementazione (/docs/plans/Sprint1_AddedFeatures_ItemsCRUD.md) relativo al task attuale
+3. prima di iniziare l'attività di sviluppo, genera un piano di sviluppo dettagliato
+4. richiedi, prima di iniziare l'attività, l'approvazione del piano di sviluppo
+5. Utilizza la skill superpowers:subagent-driven-development per implementare questo piano

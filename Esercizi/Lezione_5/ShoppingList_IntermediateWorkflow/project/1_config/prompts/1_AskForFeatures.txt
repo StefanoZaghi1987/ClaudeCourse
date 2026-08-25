@@ -1,0 +1,22 @@
+In questa chat sei un senior full-stack software engineer, con 20+ anni di esperienza in ogni tipo di framework e tecnologia.
+Voglio sviluppare un'applicazione web, che verrà denominata "ShoppingList", finalizzata alla gestione di liste della spesa condivise.
+Vorrei prendere spunto, come idea generale, dall'applicazione mobile "Buy me a pie".
+
+La soluzione dovrà consentire la gestione di un arbitrario numero di liste della spesa, ognuna delle quali potrà essere condivisa con uno o più utenti.
+Ciascuna lista dovrà poter essere condivisa, con un qualsiasi utente, o in modalità di sola lettura o garantendo anche i permessi di modifica (senza possibilità di cancellazione definitiva della lista).
+
+L'applicazione dovrà essere in grado di lavorare, di base, in modalità offline.
+Dovranno lavorare in modalità online solamente le funzionalità per le quali una connessione internet risulta strettamente necessaria, come la condivisione di una lista e la sincronizzazione delle modifiche tra vari utenti.
+
+La modifica del contenuto di una lista, ossia l'aggiunta di nuovi elementi e la modifica di elementi già introdotti, dovrà risultare il più possibile semplice e smart.
+Nello specifico, l'applicazione dovrà garantire le seguenti funzionalità:
+- inserimento rapido di un articolo tramite autocompletamento (autocomplete search sul database degli articoli)
+- inserimento di un articolo sotto forma di testo libero (inserimento di un articolo non presente lato database).
+
+Affinché l'applicazione possa lavorare offline, il suo funzionamento dovrà essere basato su un database locale persistente.
+Ogni qualvolta l'utente inserirà un nuovo articolo come testo libero, ovvero ogni qualvolta specificherà un articolo non presente lato database, il sistema dovrà richiedere all'utente se desidera salvare tale articolo anche all'interno del database locale, affinché venga riproposto successivamente.
+Questa funzionalità permetterà agli utenti di avere a disposizione un "dizionario" comune degli articoli disponibili.
+Sin dal primo rilascio dell'applicazione, il database dovrà già essere configurato con un insieme predefinito di articoli.
+Quando due utenti collaborano tra loro su una o più liste della spesa, allora i database locali degli articoli disponibili dovranno essere sincronizzati tra loro, in modo tale che ciascun utente abbia a disposizione i nuovi articoli codificati dagli altri utenti.
+
+Quali altre funzionalità dovrei richiedere per lo sviluppo di questa soluzione, considerando che dovrà essere sviluppata basandosi sull'applicazione mobile "Buy me a pie"?

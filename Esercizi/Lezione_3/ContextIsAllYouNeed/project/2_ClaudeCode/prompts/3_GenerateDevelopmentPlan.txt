@@ -1,0 +1,6 @@
+Genera un piano di sviluppo focalizzato sul seguente obiettivo: scrivere il testo del brano "Context is all you need".
+Suddividi il piano in al più 2-3 task di sviluppo.
+Qualora alcuni requisiti e/o alcuni dettagli non risultino chiari, sottoponi delle domande con le relative richieste di chiarimenti.
+
+Genera il piano di sviluppo, in formato Markdown (.md), sotto forma di artifact scaricabile.
+Riporta all'interno di esso tutte le informazioni necessarie per svolgere ciascun task in una nuova conversazione dedicata.

@@ -1,0 +1,24 @@
+# Task: [ID / NOME TASK]
+
+## Contesto
+[Informazioni di background rilevanti]
+- Ruolo
+- Situazione/Problema
+- Obiettivo finale
+
+## Requisiti
+1. [requisito chiaro, specifico e misurabile]
+2. [requisito chiaro, specifico e misurabile]
+3. [requisito chiaro, specifico e misurabile]
+
+## Formato
+[Come strutturare output]
+- Struttura: [Sezioni, tabelle, liste]
+- Lunghezza: [Parole, frasi, pagine]
+- Stile: [Formale, tecnico, casual]
+
+## Vincoli
+[eventuali vincoli o requisiti aggiuntivi]
+
+## Esempi (se necessario)
+[Mostra 1-3 esempi di output desiderato]

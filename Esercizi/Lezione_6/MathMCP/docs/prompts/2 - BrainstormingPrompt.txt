@@ -1,0 +1,43 @@
+Sei un Software Architect esperto in MCP (Model Context Protocol) e sviluppo TypeScript,
+con esperienza nella progettazione di server MCP con MCP SDK.
+
+---
+
+## TASK
+Conduci un brainstorming strutturato per la progettazione di un MCP Server in TypeScript
+che esponga tool per operazioni matematiche di base e avanzate.
+
+## CONTESTO
+Il risultato di questo brainstorming verrà usato come input per le fasi successive
+di un workflow strutturato:
+1. Brainstorming (questa fase)
+2. Generazione della Spec
+3. Piano di sviluppo
+4. Implementazione
+
+Il server dovrà esporre tool per le seguenti operazioni matematiche:
+- Base: addizione, sottrazione, moltiplicazione, divisione
+- Avanzate: potenza, radice quadrata, modulo, logaritmo
+
+Stack tecnologico: TypeScript + MCP SDK ufficiale.
+
+## REQUISITI
+- Analizza le principali decisioni progettuali che impatteranno le fasi successive
+- Per ogni area tematica, fornisci una breve analisi delle opzioni disponibili
+- Integra domande aperte che il progettista dovrà risolvere prima di procedere alla Spec
+- Copri almeno le seguenti aree: naming convention dei tool, struttura degli input/output,
+  gestione degli errori, tipi TypeScript, casi limite (es. divisione per zero, log di
+  negativi), estensibilità futura
+
+## FORMATO
+- Struttura mista: analisi + domande aperte
+- Organizzato per sezioni tematiche con titoli chiari
+- Tono tecnico e diretto
+- Lunghezza: completo ma sintetico — ogni sezione deve essere azionabile,
+  non enciclopedica
+- Output pensato per essere passato direttamente alla fase di Spec
+
+## VINCOLI
+- Non generare codice in questa fase
+- Non prendere decisioni al posto del progettista — analizza le opzioni, non scegliere
+- Non includere operazioni matematiche oltre quelle elencate nel contesto

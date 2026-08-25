@@ -1,0 +1,5 @@
+Genera un piano di sviluppo focalizzato sullo sviluppo di un MVP della soluzione, che illustri le sue funzionalità principali ed essenziali.
+Qualora alcuni requisiti e/o alcuni dettagli non risultino chiari, sottoponi delle domande con le relative richieste di chiarimenti.
+
+Genera il piano di sviluppo, in formato Markdown (.md), sotto forma di artifact scaricabile.
+Riporta all'interno di esso tutte le informazioni rilevanti e necessarie per svolgere ciascun singolo task in una nuova conversazione dedicata.

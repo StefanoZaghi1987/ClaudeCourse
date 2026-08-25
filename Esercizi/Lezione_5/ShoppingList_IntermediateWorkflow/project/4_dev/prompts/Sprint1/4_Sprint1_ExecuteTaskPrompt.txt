@@ -1,0 +1,84 @@
+# Task: Sprint 1 — Core Offline: Liste e Articoli
+
+## Obiettivo
+CRUD completo di liste e articoli offline-first, senza autenticazione (modalità guest).
+
+## Requisiti
+1. L'app funziona completamente offline
+2. creare/modificare/eliminare liste e articoli
+3. spuntare articoli
+4. cestino item-only con restore
+5. drag-reorder
+6. toast
+7. form con validazione Zod
+8. Playwright E2E golden-path verde con `context.setOffline(true)`
+9. Zero chiamate di rete osservate durante l'E2E.
+
+## Contesto
+PROGETTO: ShoppingList MVP — Sprint 1 Core Offline
+OBIETTIVO: CRUD liste + articoli + trash completamente offline, guest-mode, no network
+
+PRINCIPIO CORE: Dexie è source of truth. useLiveQuery rende l'UI reattiva.
+Zod schemas in src/types/domain.ts sono la source of truth per tipi + validazione.
+Ogni CRUD locale scrive un row in db.changes via recordChange().
+
+STRUTTURA DIRECTORY canonical (feature-sliced, da architettura.md):
+  src/
+  ├── components/
+  │   ├── ui/                  (shadcn/ui: button, input, dialog, ...)
+  │   ├── layout/AppShell.tsx  (skip link + header + Outlet + Toaster)
+  │   └── shared/ConfirmDialog.tsx  (double-click destructive confirm)
+  ├── features/
+  │   ├── lists/
+  │   │   ├── logic.ts         (Zod re-exports + formatUpdatedAt)
+  │   │   ├── hooks/           (useLists, useArchivedLists, useList, useListOperations)
+  │   │   ├── components/      (ListDashboard, ListCard, ListForm, ArchivedListsSection)
+  │   │   └── __tests__/
+  │   └── items/
+  │       ├── logic.ts         (Zod re-exports + computeNextSortOrder)
+  │       ├── hooks/           (useItems, useItemOperations, useTrash, useTrashOperations)
+  │       ├── components/      (ListDetailView, ItemList, ItemRow, ItemForm, TrashView)
+  │       └── __tests__/
+  ├── services/db/
+  │   ├── schema.ts            (Dexie v1 FROZEN + v2 con .upgrade())
+  │   ├── session.ts           (guest session bootstrap)
+  │   ├── changeLog.ts         (recordChange() chokepoint)
+  │   ├── lists.ts             (list CRUD repo, returns Result)
+  │   └── items.ts             (item CRUD repo, returns Result)
+  ├── types/
+  │   ├── domain.ts            (Zod schemas + z.infer types)
+  │   └── sync.ts              (ChangeLog shape)
+  ├── utils/
+  │   └── result.ts            (Result<T, AppError>, ok, err, toAppError)
+  └── __tests__/               (Sprint 0 smoke + any cross-cutting)
+  e2e/
+  └── offline-core.spec.ts     (Playwright golden path with setOffline(true))
+
+PATTERN DA SEGUIRE:
+1. Repository (services/db/*.ts) → accesso diretto Dexie, ritorna Result<T, AppError>,
+   scrive changeLog tramite recordChange() in una transazione unica per ogni CRUD.
+2. Hook (features/*/hooks/use*Operations.ts) → wrapping del repo con toast (sonner)
+   integrato + loading/error state + validazione Zod pre-call.
+3. Hook di lettura (features/*/hooks/use*.ts) → useLiveQuery() su query Dexie pure.
+4. Component → legge via useLiveQuery hooks, chiama use*Operations, usa shadcn/ui
+   components + RHF + zodResolver per i form.
+
+REGOLA CRITICA 1: Ogni operazione CRUD DEVE passare attraverso recordChange() in
+src/services/db/changeLog.ts. Nessun db.lists.put()/db.items.put() senza changeLog.
+REGOLA CRITICA 2: Ogni delete di List passa da ConfirmDialog con double-click.
+REGOLA CRITICA 3: import 'fake-indexeddb/auto' è LINE 1 di ogni test Dexie.
+REGOLA CRITICA 4: Non mutare version(1).stores() in-place — appendere version(2).
+REGOLA CRITICA 5: Playwright gira su :4173 (preview), non :5173 (dev) — il service
+worker è registrato solo nella production build.
+
+OPTIMISTIC UI: Dexie è "abbastanza sincrono" (<10ms writes). useLiveQuery re-renders
+automaticamente al cambio delle tabelle. Non servono optimistic store updates manuali.
+
+---
+
+**Planning mode richiesto:**
+1. leggi il piano di sviluppo, contenuto nel file [development_plan.md]
+2. leggi la specifica (/docs/specs/Sprint1_CoreOffline_Spec.md) e il piano di implementazione (/docs/plans/Sprint1_CoreOffline_Plan.md) relativi al task attuale
+3. prima di iniziare l'attività di sviluppo, genera un piano di sviluppo dettagliato
+4. richiedi, prima di iniziare l'attività, l'approvazione del piano di sviluppo
+5. Utilizza la skill superpowers:subagent-driven-development per implementare questo piano

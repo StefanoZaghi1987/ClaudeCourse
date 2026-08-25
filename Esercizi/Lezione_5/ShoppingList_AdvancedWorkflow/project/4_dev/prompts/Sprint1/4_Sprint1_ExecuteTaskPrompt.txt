@@ -1,0 +1,19 @@
+# Task: Sprint 1 — Core Offline: Liste e Articoli
+
+## Obiettivo
+CRUD completo di liste e articoli offline-first, senza autenticazione.
+
+## Requisiti
+Tutte le operazioni funzionano con DevTools → Network → Offline.
+
+## Contesto
+Leggi il piano di sviluppo, contenuto nel file [piano-sviluppo.md].
+
+---
+
+**Planning mode richiesto:**
+1. leggi il piano di sviluppo, contenuto nel file [piano-sviluppo.md]
+2. leggi la specifica (/docs/specs/Sprint1_CoreOffline_Spec.md) e il piano di implementazione (/docs/plans/Sprint1_CoreOffline_Plan.md) relativi al task attuale
+3. prima di iniziare l'attività di sviluppo, genera un piano di sviluppo dettagliato
+4. richiedi, prima di iniziare l'attività, l'approvazione del piano di sviluppo
+5. Utilizza la skill superpowers:subagent-driven-development per implementare questo piano

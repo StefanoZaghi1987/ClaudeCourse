@@ -1,0 +1,20 @@
+node_modules
+dist
+*.local
+
+# Environment variables
+.env.local
+.env*.local
+.env
+.env.*
+
+# Vite PWA
+dev-dist/
+
+# Testing
+coverage/
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea/

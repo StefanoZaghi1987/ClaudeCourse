@@ -1,0 +1,3 @@
+Leggi il piano di sviluppo contenuto nel file "[DEVELOPMENT_PLAN.md]".
+Svolgi il task "[ID / NOME TASK]".
+Qualora tu abbia dei dubbi, fammi delle domande.
